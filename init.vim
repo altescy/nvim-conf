@@ -2,6 +2,7 @@
 set number
 
 set noswapfile
+set termguicolors
 
 
 " insertモードから抜ける
