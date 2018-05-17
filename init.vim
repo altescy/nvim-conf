@@ -19,6 +19,12 @@ set autoindent
 set smartindent
 set expandtab
 
+set incsearch
+set ignorecase
+set smartcase
+set hlsearch
+set cursorline
+
 " プラグインがインストールされるディレクトリ
 let s:dein_dir = expand('~/.cache/dein')
 " dein.vim 本体
