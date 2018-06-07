@@ -27,6 +27,8 @@ set smartcase
 set hlsearch
 set cursorline
 
+set mouse=a 
+
 " プラグインがインストールされるディレクトリ
 let s:dein_dir = expand('~/.cache/dein')
 " dein.vim 本体
