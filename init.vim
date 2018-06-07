@@ -10,6 +10,8 @@ inoremap <silent> jj <ESC>
 inoremap <silent> <C-j> j
 inoremap <silent> kk <ESC>
 inoremap <silent> <C-k> k
+inoremap <C-c> <ESC>
+noremap <C-c><C-c> :nohlsearch<Cr><Esc>
 
 filetype indent on
 set tabstop=4
