@@ -29,6 +29,9 @@ set cursorline
 
 set mouse=a 
 
+set spell
+set spelllang=en,cjk
+
 " プラグインがインストールされるディレクトリ
 let s:dein_dir = expand('~/.cache/dein')
 " dein.vim 本体
