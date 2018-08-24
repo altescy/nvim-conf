@@ -24,7 +24,7 @@ git clone https://github.com/altescy/nvim_conf.git ~/.config/nvim
   - `JuliaEditorSupport/julia-vim`
 - Markdown
   - `plasticboy/vim-markdown`
-  - ``
+  - `godlygeek/tabular`
 - Python
 - Rust
   - `rust-lang/rust.vim`
