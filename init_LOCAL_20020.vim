@@ -14,6 +14,7 @@ inoremap <C-c> <ESC>
 noremap <C-c><C-c> :nohlsearch<Cr><Esc>
 
 filetype plugin on
+
 filetype indent on
 set tabstop=4
 set shiftwidth=4
@@ -28,7 +29,7 @@ set smartcase
 set hlsearch
 set cursorline
 
-set mouse=a
+set mouse=a 
 
 set spell
 set spelllang=en,cjk

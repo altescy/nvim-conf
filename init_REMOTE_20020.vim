@@ -28,7 +28,7 @@ set smartcase
 set hlsearch
 set cursorline
 
-set mouse=a
+set mouse=a 
 
 set spell
 set spelllang=en,cjk
