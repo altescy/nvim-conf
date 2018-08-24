@@ -1,7 +1,10 @@
-# configuration files for neovim
+Neovim Configurations
+===
+
+configuration files for neovim
 
 
-- Installation
+### Install
 
 ```
 sudo apt-add-repository ppa:neovim-ppa/stable
@@ -10,3 +13,21 @@ sudo apt install neovim
 sudo pip install -U neovim
 git clone https://github.com/altescy/nvim_conf.git ~/.config/nvim
 ```
+
+### Supported Languages
+
+- Crystal
+  - `rhysd/vim-crystal`
+- Go
+  - `fatih/vim-go`
+- Julia
+  - `JuliaEditorSupport/julia-vim`
+- Markdown
+  - `plasticboy/vim-markdown`
+  - ``
+- Python
+- Rust
+  - `rust-lang/rust.vim`
+  - `racer-rust/vim-racer`
+- Scala
+  - `derekwyatt/vim-scala`
