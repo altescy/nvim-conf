@@ -22,6 +22,9 @@ git clone https://github.com/altescy/nvim_conf.git ~/.config/nvim
   - `fatih/vim-go`
 - Julia
   - `JuliaEditorSupport/julia-vim`
+- Haskell
+  - `kana/vim-filetype-haskell`
+  - `vim-stylish-haskell`
 - Markdown
   - `plasticboy/vim-markdown`
   - `godlygeek/tabular`
@@ -31,3 +34,16 @@ git clone https://github.com/altescy/nvim_conf.git ~/.config/nvim
   - `racer-rust/vim-racer`
 - Scala
   - `derekwyatt/vim-scala`
+
+
+#### Rust
+```
+% sudo apt install build-essential cmake pkg-config zlib1g-dev libssl-dev
+% rustup toolchain add nightly
+% cargo +nightly install racer
+```
+
+#### Haskell
+```
+% stack install stylish-haskell
+```

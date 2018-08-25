@@ -124,3 +124,12 @@ hook_add = '''
 
 [[plugins]]
 repo = 'rhysd/vim-crystal'
+
+[[plugins]]
+repo = 'kana/vim-filetype-haskell'
+
+[[plugins]]
+repo = 'nbouscal/vim-stylish-haskell'
+
+[[plugins]]
+repo = 'eagletmt/ghcmod-vim'
