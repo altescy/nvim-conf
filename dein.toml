@@ -135,3 +135,6 @@ repo = 'nbouscal/vim-stylish-haskell'
 
 [[plugins]]
 repo = 'eagletmt/ghcmod-vim'
+
+[[plugins]]
+repo = 'ryanoasis/vim-devicons'
