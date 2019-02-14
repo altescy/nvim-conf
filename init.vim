@@ -1,5 +1,11 @@
 " 行数
 set number
+" toggle relative-number automatically
+augroup numbertoggle
+  autocmd!
+  autocmd BufEnter,FocusGained,InsertLeave,WinEnter * if &nu | set rnu   | endif
+  autocmd BufLeave,FocusLost,InsertEnter,WinLeave   * if &nu | set nornu | endif
+augroup END
 
 set noswapfile
 set termguicolors
