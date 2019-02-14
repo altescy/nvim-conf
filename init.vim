@@ -1,5 +1,5 @@
 " 行数
-set number
+set number relativenumber
 " toggle relative-number automatically
 augroup numbertoggle
   autocmd!
