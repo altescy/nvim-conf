@@ -139,7 +139,13 @@ repo = 'Townk/vim-autoclose'
 
 [[plugins]]
 repo = 'plasticboy/vim-markdown'
-hook_add = 'au BufRead,BufNewFile *.md set filetype=markdown'
+hook_add = '''
+    au BufRead,BufNewFile *.md set filetype=markdown
+    let g:tex_conceal = ""
+    let g:vim_markdown_math = 1
+    let g:vim_markdown_conceal = 0
+    let g:vim_markdown_folding_disabled = 1
+'''
 
 [[plugins]]
 repo = 'rust-lang/rust.vim'
