@@ -10,6 +10,7 @@ augroup END
 set noswapfile
 set termguicolors
 
+let mapleader = "\<Space>"
 
 " insertモードから抜ける
 inoremap <silent> jj <ESC>
