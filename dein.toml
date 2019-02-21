@@ -14,6 +14,9 @@ build = 'make'
 repo = 'ryanoasis/vim-devicons'
 
 [[plugins]]
+repo = 'kien/rainbow_parentheses.vim'
+
+[[plugins]]
 repo = 'vim-airline/vim-airline'
 hook_add = '''
     let g:airline_powerline_fonts = 1
