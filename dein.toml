@@ -52,26 +52,18 @@ hook_add = '''
 [[plugins]]
 repo = 'tomasr/molokai'
 hook_add = '''
-    syntax enable
-    colorscheme molokai
-    let g:airline_theme = 'molokai'
-'''
-
-[[plugins]]
-repo = 'srcery-colors/srcery-vim'
-hook_add = '''
-    " colorscheme srcery
-'''
-
-[[plugins]]
-repo = 'sickill/vim-monokai'
-hook_add = '''
     " syntax enable
-    " colorscheme monokai
+    " colorscheme molokai
+    " let g:airline_theme = 'molokai'
 '''
 
 [[plugins]]
-repo = 'ctrlpvim/ctrlp.vim'
+repo = 'sjl/badwolf'
+hook_add = '''
+    syntax enable
+    colorscheme badwolf
+    let g:badwolf_tabline = 0
+'''
 
 
 #
@@ -90,6 +82,9 @@ repo = 'zchee/deoplete-jedi'
 [[plugins]]
 repo = 'scrooloose/nerdtree'
 hook_add = 'map <C-n> :NERDTreeToggle<CR>'
+
+[[plugins]]
+repo = 'ctrlpvim/ctrlp.vim'
 
 [[plugins]]
 repo = 'w0rp/ale'
