@@ -13,12 +13,15 @@ set termguicolors
 let mapleader = "\<Space>"
 
 " insertモードから抜ける
-inoremap <silent> jj <ESC>
-inoremap <silent> <C-j> j
-inoremap <silent> kk <ESC>
-inoremap <silent> <C-k> k
 inoremap <C-c> <ESC>
+inoremap <silent> jj <ESC>
+inoremap <silent> kk <ESC>
+inoremap <silent> <C-j> j
+inoremap <silent> <C-k> k
+" turn off highlignted
 noremap <C-c><C-c> :nohlsearch<Cr><Esc>
+" toggle relative linenumber
+noremap <C-N><C-N> :set relativenumber!<CR>
 
 filetype plugin on
 filetype indent on
