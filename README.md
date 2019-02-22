@@ -29,11 +29,19 @@ configuration files for neovim
   - `plasticboy/vim-markdown`
   - `godlygeek/tabular`
 - Python
+  - `numirias/semshi`
 - Rust
   - `rust-lang/rust.vim`
   - `racer-rust/vim-racer`
 - Scala
   - `derekwyatt/vim-scala`
+
+
+#### Python
+```
+% pip install -U pynvim
+```
+- You may also need to run :UpdateRemotePlugins to update the plugin manifest.
 
 
 #### Rust

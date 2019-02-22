@@ -140,6 +140,9 @@ repo = 'Townk/vim-autoclose'
 #
 
 [[plugins]]
+repo = 'numirias/semshi'
+
+[[plugins]]
 repo = 'plasticboy/vim-markdown'
 hook_add = '''
     au BufRead,BufNewFile *.md set filetype=markdown
