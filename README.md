@@ -39,7 +39,7 @@ configuration files for neovim
 
 #### Python
 ```
-% pip install -U pynvim
+% pip install -U pynvim mypy
 ```
 - You may also need to run :UpdateRemotePlugins to update the plugin manifest.
 
