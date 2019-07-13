@@ -72,3 +72,9 @@ $pdf_mode      = '3'; # .tex -> .dvi -> .pdf
 $pdf_previewer = 'start evince %O %S';
 EOF
 ```
+
+#### Ruby
+
+```
+gem i solargraph
+```
