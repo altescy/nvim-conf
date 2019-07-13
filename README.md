@@ -14,6 +14,11 @@ configuration files for neovim
 % git clone https://github.com/altescy/nvim_conf.git ~/.config/nvim
 ```
 
+### EditorConfig setup
+
+see this: https://editorconfig.org/
+
+
 ### Supported Languages
 
 - Crystal

@@ -134,6 +134,9 @@ hook_add = "let g:previm_open_cmd = 'google-chrome-stable'"
 [[plugins]]
 repo = 'Townk/vim-autoclose'
 
+[[plugins]]
+repo = 'editorconfig/editorconfig-vim'
+
 
 #
 #  LANGUAGE SUPPORT
