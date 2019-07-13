@@ -81,5 +81,6 @@ EOF
 #### Ruby
 
 ```
+gem i neovim
 gem i solargraph
 ```
