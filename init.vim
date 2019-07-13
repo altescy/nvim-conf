@@ -8,7 +8,6 @@ augroup numbertoggle
 augroup END
 
 set noswapfile
-set termguicolors
 
 let mapleader = "\<Space>"
 
