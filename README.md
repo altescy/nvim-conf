@@ -21,10 +21,16 @@ see this: https://editorconfig.org/
 
 ### Language Support
 
-- C/C_++
+- C/C++
 
 ```
 % sudo apt install clang-tools-8
+```
+
+- Go
+
+```
+% go get -u golang.org/x/tools/cmd/gopls
 ```
 
 - Python
