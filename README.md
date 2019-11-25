@@ -21,6 +21,12 @@ see this: https://editorconfig.org/
 
 ### Language Support
 
+- C/C_++
+
+```
+% sudo apt install clang-tools-8
+```
+
 - Python
 
 ```
