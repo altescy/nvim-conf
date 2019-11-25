@@ -32,15 +32,50 @@ let g:airline_theme = 'codedark'
 #
 #  UTILITIES
 #
+[[plugins]]
+repo = 'prabirshrestha/async.vim'
 
 [[plugins]]
-repo = 'Shougo/deoplete.nvim'
+repo = 'prabirshrestha/vim-lsp'
 hook_add = '''
-    let g:deoplete#enable_at_startup = 1
+if executable('pyls')
+        au User lsp_setup call lsp#register_server({
+                \ 'name': 'pyls',
+                \ 'cmd': {server_info->['pyls']},
+                \ 'whitelist': ['python'],
+        \ })
+endif
+
+let g:lsp_signs_enabled = 1
+let g:lsp_diagnostics_echo_cursor = 1
 '''
 
 [[plugins]]
-repo = 'zchee/deoplete-jedi'
+repo = 'prabirshrestha/asyncomplete.vim'
+
+[[plugins]]
+repo = 'prabirshrestha/asyncomplete-lsp.vim'
+
+[[plugins]]
+repo = 'prabirshrestha/asyncomplete-emoji.vim'
+hook_add = '''
+au User asyncomplete_setup call asyncomplete#register_source(asyncomplete#sources#emoji#get_source_options({
+    \ 'name': 'emoji',
+    \ 'whitelist': ['*'],
+    \ 'completor': function('asyncomplete#sources#emoji#completor'),
+    \ }))
+'''
+
+[[plugins]]
+repo = 'prabirshrestha/asyncomplete-file.vim'
+hook_add = '''
+au User asyncomplete_setup call asyncomplete#register_source(asyncomplete#sources#file#get_source_options({
+    \ 'name': 'file',
+    \ 'whitelist': ['*'],
+    \ 'priority': 10,
+    \ 'completor': function('asyncomplete#sources#file#completor')
+    \ }))
+'''
 
 [[plugins]]
 repo = 'scrooloose/nerdtree'
@@ -74,93 +109,3 @@ repo = 'Townk/vim-autoclose'
 
 [[plugins]]
 repo = 'editorconfig/editorconfig-vim'
-
-
-#
-#  LANGUAGE SUPPORT
-#
-
-[[plugins]]
-repo = 'numirias/semshi'
-
-[[plugins]]
-repo = 'plasticboy/vim-markdown'
-hook_add = '''
-    au BufRead,BufNewFile *.md set filetype=markdown
-    let g:tex_conceal = ""
-    let g:vim_markdown_math = 1
-    let g:vim_markdown_conceal = 0
-    let g:vim_markdown_folding_disabled = 1
-'''
-
-[[plugins]]
-repo = 'rust-lang/rust.vim'
-hook_add = '''
-    let g:rustfmt_autosave = 1
-    let g:rustfmt_command = "$HOME/.cargo/bin/rustfmt"
-'''
-
-[[plugins]]
-repo = 'racer-rust/vim-racer'
-hook_add = '''
-    set hidden
-    let g:racer_insert_paren = 1
-    let g:racer_cmd = "$HOME/.cargo/bin/racer"
-'''
-
-[[plugins]]
-repo = 'derekwyatt/vim-scala'
-
-[[plugins]]
-repo = 'JuliaEditorSupport/julia-vim'
-
-[[plugins]]
-repo = 'fatih/vim-go'
-hook_add = '''
-    let g:go_highlight_functions = 1
-    let g:go_highlight_methods = 1
-    let g:go_highlight_structs = 1
-    let g:go_highlight_methods = 1
-    let g:go_highlight_operators = 1
-    let g:go_highlight_extra_types = 1
-'''
-
-[[plugins]]
-repo = 'rhysd/vim-crystal'
-
-[[plugins]]
-repo = 'kana/vim-filetype-haskell'
-
-[[plugins]]
-repo = 'nbouscal/vim-stylish-haskell'
-
-[[plugins]]
-repo = 'eagletmt/ghcmod-vim'
-
-[[plugins]]
-repo = 'cespare/vim-toml'
-
-[[plugins]]
-repo = 'lervag/vimtex'
-hook_add = '''
-    let g:vimtex_compiler_progname = 'nvr'
-    let g:vimtex_compiler_latexmk_engines = { '_' : '-pdfdvi' }
-    let g:vimtex_compiler_latexmk = { 'continuous' : 0 }
-    let g:vimtex_quickfix_open_on_warning = 0
-'''
-
-[[plugins]]
-repo = 'autozimu/LanguageClient-neovim'
-rev = 'next'
-build = 'bash install.sh'
-hook_add = '''
-set hidden
-
-let g:LanguageClient_serverCommands = {
-    \ 'ruby': ['~/.rbenv/shims/solargraph', 'stdio'],
-    \ }
-
-nnoremap <silent> K :call LanguageClient#textDocument_hover()<CR>
-nnoremap <silent> gd :call LanguageClient#textDocument_definition()<CR>
-nnoremap <silent> <F2> :call LanguageClient#textDocument_rename()<CR>
-'''
