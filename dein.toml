@@ -65,6 +65,15 @@ if executable('pyls')
         \ })
 endif
 
+if executable('rls')
+    au User lsp_setup call lsp#register_server({
+        \ 'name': 'rls',
+        \ 'cmd': {server_info->['rustup', 'run', 'stable', 'rls']},
+        \ 'workspace_config': {'rust': {'clippy_preference': 'on'}},
+        \ 'whitelist': ['rust'],
+        \ })
+endif
+
 let g:lsp_signs_enabled = 1
 let g:lsp_diagnostics_echo_cursor = 1
 let g:lsp_diagnostics_enabled = 0
@@ -112,9 +121,11 @@ hook_add = '''
     let g:ale_echo_msg_format = '[%linter%] %s [%severity%]'
     let g:ale_linters = {
     \   'python': ['pylint', 'mypy'],
+    \   'rust': ['rls'],
     \}
     let g:ale_fixers = {
     \   '*': ['remove_trailing_lines', 'trim_whitespace'],
+    \   'rust': ['rustfmt'],
     \}
 '''
 

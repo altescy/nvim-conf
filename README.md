@@ -38,3 +38,9 @@ see this: https://editorconfig.org/
 ```
 % pip install python-language-server pylint mypy
 ```
+
+- Rust
+
+```
+% rustup update && rustup component add rls rust-analysis rust-src
+```
