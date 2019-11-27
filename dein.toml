@@ -16,8 +16,8 @@ hook_add = '''
     let g:airline#extensions#tabline#buffer_nr_show = 1
     let g:airline#extensions#whitespace#mixed_indent_algo = 1
     let g:airline#extensions#ale#enabled = 1
-    nmap <C-j> <Plug>AirlineSelectPrevTab
-    nmap <C-k> <Plug>AirlineSelectNextTab
+    nmap <S-Tab> <Plug>AirlineSelectPrevTab
+    nmap <Tab> <Plug>AirlineSelectNextTab
 '''
 
 [[plugins]]
