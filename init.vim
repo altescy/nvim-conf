@@ -36,6 +36,7 @@ set ignorecase
 set smartcase
 set hlsearch
 set cursorline
+set cursorcolumn
 
 set mouse=a
 
