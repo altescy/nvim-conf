@@ -1,7 +1,7 @@
 Neovim Configurations
 ===
 
-configuration files for neovim
+***Now neovim config is managed in [altescy/dotfiles](https://github.com/altescy/dotfiles) with other configs.***
 
 
 ### Install
